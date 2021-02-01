@@ -23,8 +23,8 @@ export class AppComponent implements OnInit {
     },
     legend: {
       display: true,
-      position: 'top',
-      align: 'middle',
+      //position: 'top',
+      //align: 'middle',
       labels: {
         fontSize: 40,
         padding: 30,
@@ -70,7 +70,6 @@ export class AppComponent implements OnInit {
           datasets: this.data,
           labels: ['Presente', 'Ausente'],
         },
-        
         plugins: [ChartDataLabels],
         options: this.options
       //   data: {  
