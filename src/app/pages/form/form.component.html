@@ -1,0 +1,17 @@
+<div class="example-container">
+    <div class="form-container">
+      <mat-form-field class="form-field" appearance="outline">
+        <mat-label>Ingrese Código</mat-label>
+        <input matInput [(ngModel)]="codigo" required>
+      </mat-form-field>
+
+      <mat-form-field class="datepicker" appearance="fill">
+        <mat-label>Seleccione la fecha</mat-label>
+        <input matInput  [matDatepicker]="date" [(ngModel)]="fecha"> 
+        <mat-datepicker-toggle matSuffix [for]="date"></mat-datepicker-toggle>
+        <mat-datepicker #date></mat-datepicker> 
+      </mat-form-field>
+      <br>
+      <button mat-raised-button color="primary" routerLink="/data" type="submit">Enter</button>
+    </div>
+  </div>
